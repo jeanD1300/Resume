@@ -25,5 +25,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the sections in the resume by modifying files in `components/section` folder.
 
-#Live Deployment of this repo (http://localhost:3000)
+[Live Deployment of this repo](https://resume-napat.vercel.app/)
 

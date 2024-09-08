@@ -8,7 +8,7 @@ type ExperienceProps = {
 
 type EducationProps = {
   title: string;
-  gpa: string;
+  major: string;
   org: { name: string; logo: ImageProps["src"] };
   time: string;
 };

@@ -8,13 +8,13 @@ type Props = {
 };
 
 const fadeInUpwards = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
+  initial: { opacity: 0, y: 50 },
+  animate: { opacity: 1, y: 20 },
   transition: {
     type: "spring",
     damping: 25,
-    stiffness: 100,
-    duration: 0.3,
+    stiffness: 120,
+    duration: 0.2,
   },
 };
 

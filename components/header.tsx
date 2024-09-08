@@ -1,6 +1,7 @@
 import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 import React from "react";
-import Image from "next/image";
+import ProfileImage from "../public/images/resume/Profile2.jpg";
+import Image from 'next/image';
 import { Container } from "./container";
 import Link from "next/link";
 
@@ -9,14 +10,14 @@ export function Header() {
     <Container className="mt-5 mb-10">
       <nav className="relative flex justify-between items-center">
         <div>
-          <Link href="/">
+          <Link href="https://github.com/jeanD1300">
             <Image
-              src="/images/portrait.jpeg"
-              alt="Portrait"
-              width={48}
-              height={48}
-              className="w-10 h-10 rounded-full ring-2 ring-zinc-200 dark:ring-zinc-400/40"
-            />
+              src={ProfileImage}
+              alt="Napat"
+              width={55}
+              height={55}
+              className="w-12 h-12 rounded-full ring-2 ring-zinc-400 dark:ring-zinc-400/40"
+            /> 
           </Link>
         </div>
         <div className="pointer-events-auto">

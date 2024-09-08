@@ -8,32 +8,17 @@ import { Icons, type Icon } from "@/components/icons";
 import { Tooltip } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
-type Platform =
-  | "linkedin"
-  | "github"
-  | "twitter"
-  | "youtube"
-  | "bilibili"
-  | "mail";
+type Platform = "github" | "mail"; // เหลือเฉพาะ github และ mail
 type PlatformInfo = {
   icon: Icon;
   platform: Platform;
   label: string;
 };
+
+// mail และ github
 const iconMapper: { [key: string]: PlatformInfo } = {
-  "((?:linkedin.com)|(?:linkedin.cn))": {
-    icon: Icons.Linkedin,
-    platform: "linkedin",
-    label: "LinkedIn",
-  },
   "(?:github.com)": { icon: Icons.Github, platform: "github", label: "GitHub" },
-  "((?:youtu.be)|(?:youtube.com))": {
-    icon: Icons.Youtube,
-    platform: "youtube",
-    label: "YouTube",
-  },
   "(?:mailto:)": { icon: Icons.Mail, platform: "mail", label: "Email" },
-  // "(?:feed.xml)": { icon: AtomIcon, platform: "rss", label: "RSS 订阅" },
 };
 
 function getIconForUrl(url: string): PlatformInfo | undefined {

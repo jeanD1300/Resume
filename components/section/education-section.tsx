@@ -4,26 +4,17 @@ import LabelWithGraphic from "@/components/label-with-graphic";
 
 const education: EducationProps[] = [
   {
-    title: "M.S. Computer Science",
-    gpa: "GPA: 3.8/4.0, Science Scholar",
+    title: "Bachelor's degree",
+    major: "Computer Science",
     org: {
-      name: "University of British Columbia",
-      logo: "/images/logos/ubc.svg",
+      name: "Prince of Songkla University",
+      logo: "/images/logos/psu.png",
     },
-    time: "Sep 2022 - Pres.",
-  },
-  {
-    title: "BSc Mathematics",
-    gpa: "Dean's Scholarship",
-    org: {
-      name: "University of Nottingham",
-      logo: "/images/logos/unnc.jpg",
-    },
-    time: "Jul 2019",
+    time: "2016 - 2021",
   },
 ];
 
-function Education({ title, gpa, org, time }: EducationProps) {
+function Education({ title, major, org, time }: EducationProps) {
   return (
     <section className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
       <div className="hidden md:block">
@@ -32,7 +23,7 @@ function Education({ title, gpa, org, time }: EducationProps) {
             <span className="font-bold text-black dark:text-white">
               {title}
             </span>
-            <LabelWithGraphic icon={Icons.FileBadge} content={gpa} />
+            <LabelWithGraphic icon={Icons.FileBadge} content={major} />
           </div>
           <span>{time}</span>
         </div>
@@ -41,7 +32,7 @@ function Education({ title, gpa, org, time }: EducationProps) {
       <div className="text-sm font-semibold md:hidden text-zinc-700 dark:text-zinc-300 mb-1">
         <div className="flex gap-x-4 flex-wrap justify-between">
           <div className="font-bold text-black dark:text-white">{title}</div>
-          <LabelWithGraphic icon={Icons.FileBadge} content={gpa} />
+          <LabelWithGraphic icon={Icons.FileBadge} content={major} />
         </div>
         <div className="flex gap-x-4 flex-wrap justify-between">
           <LabelWithGraphic image={org.logo} content={org.name} />

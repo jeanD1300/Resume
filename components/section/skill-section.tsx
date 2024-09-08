@@ -8,7 +8,7 @@ export default function SkillSection() {
           <span className="font-bold">Programming</span>:
         </div>
         <div className="md:ml-8 text-zinc-700 dark:text-zinc-300">
-          JavaScript, Go, Python, C++, Java, Swift
+        CSS, HTML, JavaScript, React, Tailwind
         </div>
       </div>
       <div className="md:flex text-sm">
@@ -16,7 +16,7 @@ export default function SkillSection() {
           <span className="font-bold">Others</span>:
         </div>
         <div className="md:ml-8 text-zinc-700 dark:text-zinc-300">
-          Machine/Deep Learning, PostgreSQL, MongoDB, A/B Testing
+          RPA (Kofax), MySQL
         </div>
       </div>
     </Section>

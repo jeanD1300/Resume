@@ -29,7 +29,7 @@ const exp: ExperienceProps[] = [
         content="TOUCH-EUP CO., LTD"
       />
     ),
-    head4: "Feb 2023 - 2024 Mar",
+    head4: "Feb 2023 - 2024 May",
     bulletPoints: [
       "Create Components and small feature using by React, Node.js, css, Tailwind ,Javascript.",
       "Optimized the old project through the reduction of unnecessary calls.",
